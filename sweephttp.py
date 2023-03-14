@@ -38,7 +38,7 @@ parser.add_argument('-n', '--num_of_hosts', type=int, help='Сколько хо�
 parser.add_argument('-t', '--target', type=str, help='Куда обращаемся по HTTP')
 parser.add_argument('-m', '--method', choices=['GET', 'POST'], help='Какой используем метод Get или Post')
 parser.add_argument('-hd', '--headers', nargs='*', type=str, help='Какие смотрим заголовки')
-parser.add_argument('-p', '--payload', type=str, help='Какие смотрим заголовки')
+parser.add_argument('-p', '--payload', type=str, help='Добавляем Payload')
 args = parser.parse_args()
 
 # Выполняем скрипт в зависмости от выбора пользователя
